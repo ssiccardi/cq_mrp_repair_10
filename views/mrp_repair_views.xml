@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="cq_view_repair_order_tree" model="ir.ui.view">
+            <field name="name">cq.view.repair.order.tree</field>
+            <field name="model">mrp.repair</field>
+            <field name="inherit_id" ref="mrp_repair.view_repair_order_tree"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="date_order"/>
+                </field>
+            </field>
+        </record> 
+        
+        
+        <record id="cq_view_repair_order_form" model="ir.ui.view">
+            <field name="name">cq.view.repair.order.form</field>
+            <field name="model">mrp.repair</field>
+            <field name="inherit_id" ref="mrp_repair.view_repair_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group/group[2]/field[@name='location_id']" position="before">
+                    <field name="date_order"/>
+                </xpath>
+                
+                <xpath expr="//page[2]/separator" position="replace"/>
+                <xpath expr="//page[2]/field[@name='fees_lines']" position="replace"/>
+                
+                <xpath expr="//page[1]/div" position="after">
+                    <group></group>
+                    <separator string="Extra Operations"/>
+                    <field name="fees_lines">
+                        <form string="Extra Operations">
+                            <notebook>
+                                <page string="Repair Line">
+                                    <group col="4">
+                                        <field name="name"/>
+                                        <field name="product_id"/>
+                                        <label for="product_uom_qty"/>
+                                        <div>
+                                            <field name="product_uom_qty" class="oe_inline"/>
+                                            <field name="product_uom" class="oe_inline" groups="product.group_uom"/>
+                                        </div>
+                                        <field name="price_unit"/>
+                                        <field name="price_subtotal" widget="monetary"/>
+                                        <field name="type"/>
+                                        <field name="to_invoice"/>
+                                        <field name="tax_id" widget="many2many_tags" domain="[('type_tax_use','=','sale')]"/>
+                                        <field name="invoiced"/>
+                                        <field name="location_id" groups="stock.group_stock_multi_locations"/>
+                                        <field name="location_dest_id" groups="stock.group_stock_multi_locations"/>
+                                    </group>
+                                </page>
+                                <page string="History">
+                                    <group>
+                                        <field name="move_id" />
+                                        <field name="invoice_line_id"/>
+                                    </group>
+                                </page>
+                             </notebook>
+                        </form>
+                        <tree string="Extra Operations" editable="bottom">
+                            <field name="type"/>
+                            <field name="product_id"/>
+                            <field name='name'/>
+                            <field name="lot_id" domain="[('product_id', '=', product_id)]" context="{'default_product_id': product_id}" groups="stock.group_production_lot"/>
+                            <field name="location_id" groups="stock.group_stock_multi_locations"/>
+                            <field name="location_dest_id" groups="stock.group_stock_multi_locations"/>
+                            <field name="product_uom_qty" string="Quantity"/>
+                            <field name="product_uom" string="Unit of Measure" groups="product.group_uom"/>
+                            <field name="price_unit"/>
+                            <field name="tax_id" widget="many2many_tags"/>
+                            <field name="to_invoice"/>
+                            <field name="price_subtotal" widget="monetary"/>
+                        </tree>
+                    </field>
+                </xpath>
+            </field>
+        </record> 
+
+    </data>
+</odoo>

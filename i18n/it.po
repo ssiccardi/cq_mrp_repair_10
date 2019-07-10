@@ -1,0 +1,232 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cq_mrp_repair_10
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-27 11:37+0000\n"
+"PO-Revision-Date: 2019-02-27 11:37+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cq_mrp_repair_10
+#: selection:mrp.repair.fee,type:0
+msgid "Add"
+msgstr "Aggiungi"
+
+#. module: cq_mrp_repair_10
+#: code:addons/cq_mrp_repair_10/models/mrp_repair.py:35
+#, python-format
+msgid "Create default Repair Warehouse."
+msgstr "Creare il Magazzino Riparazioni."
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_mrp_repair_fee_location_dest_id
+msgid "Dest. Location"
+msgstr "Ubicazione di Destinazione"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_view_repair_order_form
+msgid "Extra Operations"
+msgstr "Operazioni Aggiuntive"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_view_repair_order_form
+msgid "History"
+msgstr "Storico"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_mrp_repair_fee_move_id
+msgid "Inventory Move"
+msgstr "Movimento inventario"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_mrp_repair_fee_lot_id
+msgid "Lot"
+msgstr "Lotto"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_mrp_repair_date_order
+msgid "Order Date"
+msgstr "Data Ordine"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_view_repair_order_form
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Quantity"
+msgstr "Quantità"
+
+#. module: cq_mrp_repair_10
+#: selection:mrp.repair.fee,type:0
+msgid "Remove"
+msgstr "Rimuovi"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model,name:cq_mrp_repair_10.model_mrp_repair_fee
+msgid "Repair Fees Line"
+msgstr "Riga Operazioni Aggiuntive"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model,name:cq_mrp_repair_10.model_mrp_repair_line
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_view_repair_order_form
+msgid "Repair Line"
+msgstr "Riga Riparazione"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model,name:cq_mrp_repair_10.model_mrp_repair
+msgid "Repair Order"
+msgstr "Ordine di riparazione"
+
+#. module: cq_mrp_repair_10
+#: code:addons/cq_mrp_repair_10/models/mrp_repair.py:73
+#, python-format
+msgid "Repair must be repaired in order to make the product moves."
+msgstr "Per movimentare il prodotto la riparazione deve eseere completata."
+
+#. module: cq_mrp_repair_10
+#: code:addons/cq_mrp_repair_10/models/mrp_repair.py:98
+#, python-format
+msgid "Serial number is required for extra operation line with product '%s'"
+msgstr "Numero seriale richiesto per il prodotto '%s' nelle operazioni aggiuntive"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_mrp_repair_fee_location_id
+msgid "Source Location"
+msgstr "Ubicazione di Provenienza"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_mrp_repair_fee_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_view_repair_order_form
+msgid "Unit of Measure"
+msgstr "Unità di Misura"
+
+#. module: cq_mrp_repair_10
+#: model:ir.actions.report.xml,name:cq_mrp_repair_10.action_report_mrp_repair_order
+msgid "Quotation / Order"
+msgstr "Preventivo / Ordine"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Extra Operation Line(s)</strong>"
+msgstr "<strong>Operazioni Aggiuntive</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Guarantee Limit:</strong>"
+msgstr "<strong>Fine Garanzia:</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Invoice address:"
+msgstr "Indirizzo fatturazione:"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Invoice and shipping address:"
+msgstr "Indirizzo di fatturazione e di spedizione:"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Lot Number</strong>"
+msgstr "<strong>Lotto</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Operation Line(s)</strong>"
+msgstr "<strong>Operazioni</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Price"
+msgstr "Prezzo"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Date Ordered:"
+msgstr "<strong>Data Ordine:</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Quotation Date:"
+msgstr "<strong>Data Preventivo:</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Product to Repair:</strong>"
+msgstr "<strong>Prodotto da Riparare:</strong>"
+
+
+#. module: cq_mrp_repair_10
+#: model:ir.actions.report.xml,name:mrp_repair.action_report_mrp_repair_order
+msgid "Quotation / Order"
+msgstr "Preventivo / Ordine"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_view_warehouse
+msgid "Repair"
+msgstr "Riparazioni"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Repair Order #:"
+msgstr "Ordine Riparazione #:"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Repair Quotation #:"
+msgstr "Preventivo Riparazione #:"
+
+#. module: cq_mrp_repair_10
+#: model:ir.model.fields,field_description:cq_mrp_repair_10.field_stock_warehouse_is_repair
+msgid "Repair Warehouse"
+msgstr "Magazzino Riparazione"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Shipping address :</strong>"
+msgstr "<strong>Indirizzo di spedizione:</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Tax"
+msgstr "Imposta"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Taxes"
+msgstr "Imposte"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Total Without Taxes</strong>"
+msgstr "<strong>Totale imponibile</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "<strong>Total</strong>"
+msgstr "<strong>Totale</strong>"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "Unit Price"
+msgstr "Prezzo Unitario"
+
+#. module: cq_mrp_repair_10
+#: model:ir.ui.view,arch_db:cq_mrp_repair_10.cq_report_mrprepairorder
+msgid "VAT:"
+msgstr "IVA:"
